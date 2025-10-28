@@ -78,7 +78,7 @@ jobs:
 
             ❤
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           body: ${{ steps.changelog-generator.outputs.changelog }}
           files: ${{ env.GOPATH }}/src/github.com/${{ github.repository }}/*.tar.gz
